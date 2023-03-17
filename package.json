@@ -32,6 +32,8 @@
   },
   "dependencies": {
     "@pinia/nuxt": "^0.4.7",
+    "@sentry/tracing": "^7.43.0",
+    "@sentry/vue": "^7.43.0",
     "pinia": "^2.0.33"
   }
 }

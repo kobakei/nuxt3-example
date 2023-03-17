@@ -16,6 +16,13 @@ export default defineNuxtConfig({
       ))
     }
   ],
+  runtimeConfig: {
+    public: {
+      sentry: {
+        dsn: 'SENTRY_DNS',
+      }
+    }
+  },
   pinia: {
     autoImports: [
       // automatically imports `defineStore`
