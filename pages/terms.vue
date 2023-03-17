@@ -1,7 +1,5 @@
 <template>
   <div>
-    <p>
-      Terms
-    </p>
+    <p>Terms</p>
   </div>
 </template>
