@@ -4,10 +4,6 @@ module.exports = {
     browser: true,
     node: true,
   },
-  parserOptions: {
-    parser: '@babel/eslint-parser',
-    requireConfigFile: false,
-  },
   extends: [
     // Vue関連のルールやTypeScript関連のルールの設定
     // ルール自体はplugin-vueやplugin/typescript-eslintを参照している
