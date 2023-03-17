@@ -24,6 +24,16 @@
       <button @click="store.increment()">click</button>
     </p>
 
+    <p>
+      <NuxtLink :to="localePath('/terms')">terms</NuxtLink>
+    </p>
+    <p>
+      <NuxtLink :to="localePath('/users/1')">users/1</NuxtLink>
+    </p>
+    <p>
+      <NuxtLink :to="localePath('/users/123')">users/123</NuxtLink>
+    </p>
+
     <NuxtLink :to="switchLocalePath('ja')">日本語</NuxtLink>
     <NuxtLink :to="switchLocalePath('en')">English</NuxtLink>
   </div>
