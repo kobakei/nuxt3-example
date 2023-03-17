@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-btn>Button</v-btn>
+    <v-btn color='primary'>Button</v-btn>
 
     <p>
       <v-icon>$mdiAccount</v-icon>
