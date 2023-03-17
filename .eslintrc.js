@@ -10,6 +10,8 @@ module.exports = {
     '@nuxt/eslint-config',
     // Nuxt用のルール追加（nuxt/*）
     'plugin:nuxt/recommended',
+    // Vuetifyのルール追加
+    'plugin:vuetify/recommended',
     // Vitest用のルール追加（vitest/*）
     'plugin:vitest/recommended',
     // これは必ず最後。競合するルールを全部Prettierで上書き。
