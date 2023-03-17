@@ -1,7 +1,11 @@
 <template>
   <div>
+    <HelloWorld />
+
+    <RedWorld />
+
     <p>
-      {{ $hello('world') }}
+      {{ $hello('Plugin') }}
     </p>
 
     <p>
@@ -13,6 +17,7 @@
 
 <script setup lang="ts">
 import { useCounterStore } from '~/stores/counter'
+import RedWorld from '~/components/global/RedWorld.vue'
 
 const store = useCounterStore()
 const { $hello } = useNuxtApp()
