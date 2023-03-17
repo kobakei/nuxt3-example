@@ -13,6 +13,7 @@ export default defineNuxtConfig({
     transpile: ['vuetify'],
   },
   css: ['@/assets/main.scss'],
+  // css: ['vuetify/lib/styles/main.sass'],
   modules: [
     '@pinia/nuxt',
     '@nuxtjs/i18n',

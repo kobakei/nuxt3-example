@@ -6,13 +6,11 @@
 
     <v-textarea />
 
-    <v-alert type='info'>This is alert</v-alert>
+    <v-alert type="info">This is alert</v-alert>
 
     <NumberTextField v-model="number" />
 
-    <p>
-      number is {{ number }}
-    </p>
+    <p>number is {{ number }}</p>
   </v-container>
 </template>
 

@@ -1,5 +1,9 @@
 <template>
-  <v-text-field label='Number' :model-value="value" @update:model-value="onInput" />
+  <v-text-field
+    label="Number"
+    :model-value="value"
+    @update:model-value="onInput"
+  />
 </template>
 
 <script lang="ts">

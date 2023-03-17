@@ -1,5 +1,6 @@
 import { createVuetify } from 'vuetify'
 import { aliases, mdi } from 'vuetify/iconsets/mdi-svg'
+import { md2 } from 'vuetify/blueprints'
 import { mdiAccount } from '@mdi/js'
 
 // Translations provided by Vuetify
@@ -8,6 +9,7 @@ import { ja, en } from 'vuetify/locale'
 export default defineNuxtPlugin((nuxtApp) => {
   const vuetify = createVuetify({
     ssr: true,
+    blueprint: md2,
     icons: {
       defaultSet: 'mdi',
       // ここに使用するアイコンのみ列挙することで、不要なアイコンをバンドルしなくてよくなる
