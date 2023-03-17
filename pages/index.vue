@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <v-container>
     <v-btn color="primary">Button</v-btn>
 
     <p>
@@ -28,6 +28,9 @@
       <NuxtLink :to="localePath('/terms')">terms</NuxtLink>
     </p>
     <p>
+      <NuxtLink :to="localePath('/privacy')">privacy</NuxtLink>
+    </p>
+    <p>
       <NuxtLink :to="localePath('/users/1')">users/1</NuxtLink>
     </p>
     <p>
@@ -36,7 +39,7 @@
 
     <NuxtLink :to="switchLocalePath('ja')">日本語</NuxtLink>
     <NuxtLink :to="switchLocalePath('en')">English</NuxtLink>
-  </div>
+  </v-container>
 </template>
 
 <script setup lang="ts">
