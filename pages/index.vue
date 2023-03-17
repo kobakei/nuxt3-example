@@ -1,5 +1,12 @@
 <template>
   <div>
+    <v-btn>Button</v-btn>
+
+    <p>
+      <v-icon>$mdiAccount</v-icon>
+      This is icon
+    </p>
+
     <HelloWorld />
 
     <RedWorld />
