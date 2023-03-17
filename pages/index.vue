@@ -5,6 +5,10 @@
     <RedWorld />
 
     <p>
+      {{ concat('hoge', 'fuga') }}
+    </p>
+
+    <p>
       {{ $hello('Plugin') }}
     </p>
 
@@ -18,6 +22,7 @@
 <script setup lang="ts">
 import { useCounterStore } from '~/stores/counter'
 import RedWorld from '~/components/global/RedWorld.vue'
+import { concat } from '../utils/concat'
 
 const store = useCounterStore()
 const { $hello } = useNuxtApp()
