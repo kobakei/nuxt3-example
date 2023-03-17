@@ -8,6 +8,7 @@ export default defineNuxtConfig({
   modules: [
     '@pinia/nuxt',
     '@nuxtjs/i18n',
+    '@nuxtjs/eslint-module',
     // Vuetify treeshaking: https://vuetifyjs.com/en/features/treeshaking/
     async (options, nuxt) => {
       nuxt.hooks.hook('vite:extendConfig', (config) =>

@@ -5,7 +5,7 @@ import { mdiAccount } from '@mdi/js'
 // Translations provided by Vuetify
 import { ja, en } from 'vuetify/locale'
 
-export default defineNuxtPlugin(nuxtApp => {
+export default defineNuxtPlugin((nuxtApp) => {
   const vuetify = createVuetify({
     ssr: true,
     icons: {
@@ -22,7 +22,7 @@ export default defineNuxtPlugin(nuxtApp => {
     locale: {
       locale: 'ja',
       fallback: 'en',
-      messages: { ja, en }
+      messages: { ja, en },
     },
     theme: {
       defaultTheme: 'light',
@@ -40,10 +40,10 @@ export default defineNuxtPlugin(nuxtApp => {
             info: '#2196F3',
             success: '#4CAF50',
             warning: '#FB8C00',
-          }
-        }
-      }
-    }
+          },
+        },
+      },
+    },
   })
 
   // Vue.js で Vuetify を使用する

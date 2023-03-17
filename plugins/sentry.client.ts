@@ -1,11 +1,11 @@
 // https://www.ractoon.com/articles/using-sentry-with-nuxt-3
-import { defineNuxtPlugin, useRouter, useRuntimeConfig } from '#app';
-import * as Sentry from '@sentry/vue';
-import { BrowserTracing } from '@sentry/tracing';
+import { defineNuxtPlugin, useRouter, useRuntimeConfig } from '#app'
+import * as Sentry from '@sentry/vue'
+import { BrowserTracing } from '@sentry/tracing'
 
 export default defineNuxtPlugin((nuxtApp) => {
-  const config = useRuntimeConfig();
-  const router = useRouter();
+  const config = useRuntimeConfig()
+  const router = useRouter()
 
   if (config.public.sentry.enabled) {
     Sentry.init({
@@ -17,12 +17,12 @@ export default defineNuxtPlugin((nuxtApp) => {
         }),
       ],
       tracesSampleRate: 1.0,
-    });
+    })
 
     return {
       provide: {
         sentry: Sentry,
       },
-    };
+    }
   }
 })

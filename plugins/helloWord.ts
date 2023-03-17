@@ -1,7 +1,7 @@
-export default defineNuxtPlugin(nuxtApp => {
-    return {
-        provide: {
-            hello: (msg: string) => `Hello ${msg}`
-        }
-    }
+export default defineNuxtPlugin((nuxtApp) => {
+  return {
+    provide: {
+      hello: (msg: string) => `Hello ${msg}`,
+    },
+  }
 })
