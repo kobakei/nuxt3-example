@@ -1,19 +1,19 @@
 <template>
   <div>
-    {{ store.count }}
-    <button @click="store.increment()">click</button>
+    <p>
+      {{ $hello('world') }}
+    </p>
+
+    <p>
+      {{ store.count }}
+      <button @click="store.increment()">click</button>
+    </p>
   </div>
 </template>
 
-<script lang="ts">
-
+<script setup lang="ts">
 import {useCounterStore} from "~/stores/counter";
 
-export default {
-  data() {
-    return {
-      store: useCounterStore()
-    }
-  },
-}
+const store = useCounterStore()
+const { $hello } = useNuxtApp()
 </script>
