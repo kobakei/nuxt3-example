@@ -2,6 +2,12 @@
   <v-container>
     <h1>Privacy policy</h1>
 
+    <v-text-field />
+
+    <v-textarea />
+
+    <v-alert type='info'>This is alert</v-alert>
+
     <NumberTextField v-model="number" />
 
     <p>

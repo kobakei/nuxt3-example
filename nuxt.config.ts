@@ -12,6 +12,7 @@ export default defineNuxtConfig({
   build: {
     transpile: ['vuetify'],
   },
+  css: ['@/assets/main.scss'],
   modules: [
     '@pinia/nuxt',
     '@nuxtjs/i18n',
