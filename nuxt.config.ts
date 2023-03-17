@@ -10,18 +10,19 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     // Vuetify treeshaking: https://vuetifyjs.com/en/features/treeshaking/
     async (options, nuxt) => {
-      // @ts-ignore
-      nuxt.hooks.hook('vite:extendConfig', config => config.plugins.push(
-        vuetify()
-      ))
-    }
+      nuxt.hooks.hook('vite:extendConfig', (config) =>
+        // @ts-ignore
+        config.plugins.push(vuetify())
+      )
+    },
   ],
   runtimeConfig: {
     public: {
       sentry: {
         dsn: 'SENTRY_DNS',
-      }
-    }
+        enabled: false,
+      },
+    },
   },
   pinia: {
     autoImports: [
@@ -52,5 +53,5 @@ export default defineNuxtConfig({
     defaultLocale: 'ja',
     lazy: true,
     langDir: 'assets/locales/',
-  }
+  },
 })
