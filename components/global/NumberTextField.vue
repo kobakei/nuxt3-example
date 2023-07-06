@@ -15,7 +15,7 @@ export default defineComponent({
       required: true,
     },
   },
-  // emits: ['update:modelValue'],
+  emits: ['update:modelValue'],
   methods: {
     onInput(val: string | undefined) {
       this.$emit('update:modelValue', val)
